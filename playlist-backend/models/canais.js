@@ -1,22 +1,25 @@
 import { DataTypes } from 'sequelize';
 
 export default (sequelize) => {
-  const Usuario = sequelize.define('Usuario', {
+  const Canal = sequelize.define('Canal', {
     id: {
       type: DataTypes.INTEGER,
       autoIncrement: true,
       primaryKey: true
     },
-    login: {
-      type: DataTypes.STRING(50),
-      allowNull: false,
-      unique: true
-    },
     nome: {
       type: DataTypes.STRING(100),
+      allowNull: false
+    },
+    data_criacao: {
+      type: DataTypes.DATE,
+      allowNull: false
+    },
+    genero_tema: {
+      type: DataTypes.STRING(50),
       allowNull: false
     }
   });
 
-  return Usuario;
+  return Canal;
 };
