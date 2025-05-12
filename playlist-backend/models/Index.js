@@ -1,11 +1,12 @@
 import Sequelize from 'sequelize';
 import pg from 'pg';
-import Usuario from './usuarios.js';
-import Filme from './filmes.js';
-import Canal from './canais.js';
-import CanalFilme from './canal_filmes.js';
-import Playlist from './playlists.js';
-import PlaylistFilme from './playlist_filmes.js';
+import Usuario from './Usuarios.js';
+import Filme from './Filmes.js';
+import Canal from './Canais.js';
+import CanalFilme from './Canal_filmes.js';
+import Playlist from './Playlists.js';
+import PlaylistFilme from './Playlist_filmes.js';
+//import Mensalidade from './Mensalidade.js'
 
 const sequelize = new Sequelize({
   dialect: 'postgres',
